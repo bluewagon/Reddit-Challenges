@@ -14,7 +14,7 @@ namespace UserInformation
             int age = 0;
             while (age < 1 || age > 99)
             {
-                Console.WriteLine("Please enter your age: ");
+                Console.Write("Please enter your age: ");
                 var inputAge = Console.ReadLine();
                 if (Int32.TryParse(inputAge, out age))
                 {
@@ -41,7 +41,7 @@ namespace UserInformation
             string item = string.Empty;
             while (string.IsNullOrEmpty(item))
             {
-                Console.WriteLine(message);
+                Console.Write(message);
                 item = Console.ReadLine();
             }
             return item;

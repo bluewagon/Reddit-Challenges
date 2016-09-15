@@ -36,7 +36,7 @@ namespace UserInformationTests
                     Assert.AreEqual(_name, inputName);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your name: {Environment.NewLine}";
+                    string expected = $"Please enter your name: ";
                     Assert.AreEqual(expected, output);
                 }
             }
@@ -56,7 +56,7 @@ namespace UserInformationTests
                     Assert.AreEqual(_name, inputName);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your name: {Environment.NewLine}Please enter your name: {Environment.NewLine}";
+                    string expected = $"Please enter your name: Please enter your name: ";
                     Assert.AreEqual(expected, output);
                 }
             }
@@ -76,7 +76,7 @@ namespace UserInformationTests
                     Assert.AreEqual(_age, inputAge);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your age: {Environment.NewLine}";
+                    string expected = $"Please enter your age: ";
                     Assert.AreEqual(expected, output);
                 }
             }
@@ -96,8 +96,8 @@ namespace UserInformationTests
                     Assert.AreEqual(_age, inputAge);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your age: {Environment.NewLine}Please use a number." +
-                                      $"{Environment.NewLine}Please enter your age: {Environment.NewLine}";
+                    string expected = $"Please enter your age: Please use a number." +
+                                      $"{Environment.NewLine}Please enter your age: ";
                     Assert.AreEqual(expected, output);
                 }
             }
@@ -117,8 +117,8 @@ namespace UserInformationTests
                     Assert.AreEqual(_age, inputAge);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your age: {Environment.NewLine}Age is not valid." +
-                                      $"{Environment.NewLine}Please enter your age: {Environment.NewLine}";
+                    string expected = $"Please enter your age: Age is not valid." +
+                                      $"{Environment.NewLine}Please enter your age: ";
                     Assert.AreEqual(expected, output);
                 }
             }
@@ -138,8 +138,8 @@ namespace UserInformationTests
                     Assert.AreEqual(_age, inputAge);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your age: {Environment.NewLine}Age is not valid." +
-                                      $"{Environment.NewLine}Please enter your age: {Environment.NewLine}";
+                    string expected = $"Please enter your age: Age is not valid." +
+                                      $"{Environment.NewLine}Please enter your age: ";
                     Assert.AreEqual(expected, output);
                 }
             }
@@ -159,7 +159,7 @@ namespace UserInformationTests
                     Assert.AreEqual(_username, inputUsername);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your username: {Environment.NewLine}";
+                    string expected = $"Please enter your username: ";
                     Assert.AreEqual(expected, output);
                 }
             }
@@ -179,7 +179,7 @@ namespace UserInformationTests
                     Assert.AreEqual(_username, inputUsername);
 
                     string output = writer.ToString();
-                    string expected = $"Please enter your username: {Environment.NewLine}Please enter your username: {Environment.NewLine}";
+                    string expected = $"Please enter your username: Please enter your username: ";
                     Assert.AreEqual(expected, output);
                 }
             }
